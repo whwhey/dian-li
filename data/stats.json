@@ -1,0 +1,58 @@
+{
+  "socialStats": {
+    "douyin": {
+      "platform": "抖音",
+      "handle": "@炫酷奥特曼",
+      "url": "https://v.douyin.com/pHlvbSip16g/",
+      "followers": 4357,
+      "following": 178,
+      "likes": 80000,
+      "posts": 22,
+      "totalViews": 350000,
+      "weeklyGrowth": {
+        "followers": 127,
+        "likes": 1234,
+        "views": 15000
+      }
+    },
+    "weibo": {
+      "platform": "微博",
+      "handle": "@炫酷奥特曼",
+      "url": "#",
+      "followers": 0,
+      "following": 0,
+      "likes": 0,
+      "posts": 0,
+      "totalViews": 0,
+      "status": "即将上线"
+    },
+    "bilibili": {
+      "platform": "B站",
+      "handle": "@炫酷奥特曼",
+      "url": "#",
+      "followers": 0,
+      "following": 0,
+      "likes": 0,
+      "posts": 0,
+      "totalViews": 0,
+      "status": "即将上线"
+    }
+  },
+  "profile": {
+    "name": "Dian Li",
+    "username": "炫酷奥特曼",
+    "age": 21,
+    "location": "北京",
+    "bio": "相信光",
+    "joinDate": "2023-01-01",
+    "verified": false
+  },
+  "achievements": {
+    "firstVideo": "2023-01-15",
+    "first1000Followers": "2023-06-20",
+    "first10000Likes": "2023-09-10",
+    "totalVideos": 22,
+    "averageViews": 15909,
+    "engagementRate": 2.5
+  }
+}

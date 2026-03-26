@@ -1,0 +1,507 @@
+/* ========================================
+   Dian Li's Personal Homepage
+   Ultraman Theme - Responsive CSS
+   ======================================== */
+
+/* Extra Small Devices (phones, less than 640px) */
+@media (max-width: 639px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    /* Typography */
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+
+    /* Hero Section */
+    .hero {
+        padding: 8rem 0.75rem 4rem;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-name {
+        font-size: 2.5rem;
+    }
+
+    .hero-username {
+        font-size: 1.25rem;
+    }
+
+    .hero-motto {
+        font-size: 1.25rem;
+    }
+
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .hero-stats {
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-value {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 0 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 0.875rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
+    /* Navigation */
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    /* About Section */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .stats-grid-large {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    /* Videos Section */
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-filters {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    /* Highlights */
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Social Platforms */
+    .social-platforms {
+        gap: 1rem;
+    }
+
+    .social-platform {
+        padding: 1.25rem;
+        gap: 1rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Section Padding */
+    .section {
+        padding: 3rem 0.75rem;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Back to Top */
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 48px;
+        height: 48px;
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+        width: 100%;
+        right: -100%;
+    }
+
+    /* Light Beam Animation */
+    .light-beam-bg {
+        display: none;
+    }
+}
+
+/* Small Devices (landscape phones, 640px and up) */
+@media (min-width: 640px) and (max-width: 767px) {
+    /* Navigation */
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    /* Hero Stats */
+    .hero-stats {
+        gap: 2rem;
+    }
+
+    /* Stats Grid */
+    .stats-grid-large {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Videos Grid */
+    .videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Highlights Grid */
+    .highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* About Grid */
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stats Grid */
+    .stats-grid-large {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Videos Grid */
+    .videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Highlights Grid */
+    .highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Large Devices (desktops, 1024px and up) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    /* Stats Grid */
+    .stats-grid-large {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Videos Grid */
+    .videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Extra Large Devices (large desktops, 1280px and up) */
+@media (min-width: 1280px) {
+    /* All default styles apply */
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .mobile-menu-toggle,
+    .mobile-menu,
+    .back-to-top,
+    .light-beam-bg,
+    .hero-bg,
+    .scroll-indicator,
+    .contact-form,
+    .video-filters,
+    .social-platforms {
+        display: none !important;
+    }
+
+    .hero {
+        background: white;
+        color: black;
+        padding: 2rem;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    body {
+        font-size: 12pt;
+    }
+}
+
+/* Accessibility - Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .light-beam-bg {
+        display: none !important;
+    }
+}
+
+/* Dark Mode Support (already dark by default) */
+@media (prefers-color-scheme: light) {
+    body.ultraman-theme {
+        background: linear-gradient(to bottom, #f1f5f9 0%, #e2e8f0 100%);
+        color: var(--text-primary);
+    }
+
+    .navbar {
+        background: rgba(255, 255, 255, 0.95);
+        border-bottom-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+        color: var(--text-secondary);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--primary);
+    }
+
+    .hero-name {
+        background: linear-gradient(135deg, var(--text-primary), var(--primary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .hero-username {
+        color: var(--secondary);
+    }
+
+    .stat-value {
+        background: linear-gradient(135deg, var(--text-primary), var(--secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .hero-location {
+        color: var(--text-secondary);
+    }
+
+    .section-title.ultraman-title {
+        color: var(--text-primary);
+        text-shadow: none;
+    }
+
+    .section-subtitle {
+        color: var(--text-secondary);
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --text-primary: #000000;
+        --text-secondary: #000000;
+        --border-width: 2px;
+    }
+
+    .btn {
+        border-width: 3px;
+    }
+
+    .card,
+    .stat-card,
+    .video-card,
+    .contact-item,
+    .contact-message {
+        border: 3px solid var(--text-primary);
+    }
+
+    .stat-card-large {
+        border-width: 3px;
+    }
+}
+
+/* Landscape Orientation Specific */
+@media (orientation: landscape) and (max-height: 500px) {
+    .hero {
+        padding: 4rem 1rem 2rem;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-name {
+        font-size: 2rem;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero-stats {
+        gap: 1rem;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+    }
+
+    .hero-motto {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Touch Devices */
+@media (hover: none) and (pointer: coarse) {
+    .card:hover,
+    .stat-card:hover,
+    .stat-card-large:hover,
+    .video-card:hover,
+    .highlight-card:hover,
+    .contact-item:hover,
+    .social-platform:hover {
+        transform: none;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+
+    .video-play-icon {
+        opacity: 1;
+    }
+}
+
+/* Focus Visible for Keyboard Navigation */
+*:focus-visible {
+    outline: 3px solid var(--theme-cyan);
+    outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--theme-cyan);
+    outline-offset: 2px;
+}
+
+/* Loading State */
+.loading {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Hidden for screen readers but not visually hidden */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--theme-red), var(--theme-blue));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--theme-blue), var(--theme-red));
+}
+
+/* Selection */
+::selection {
+    background: var(--theme-cyan);
+    color: var(--bg-dark);
+}
+
+::-moz-selection {
+    background: var(--theme-cyan);
+    color: var(--bg-dark);
+}
