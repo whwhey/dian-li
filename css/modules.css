@@ -18,7 +18,15 @@
 .about-text h3 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-    color: var(--theme-cyan);
+    color: #000000;
+}
+
+.about-text p {
+    color: #1a1a1a;
+}
+
+.about-text strong {
+    color: #000000;
 }
 
 .life-motto {
